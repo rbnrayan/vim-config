@@ -1,0 +1,38 @@
+" ================= "
+" Personal settings "
+" ================= "
+
+source $HOME/.config/vim/general/settings.vim
+source $HOME/.config/vim/keys/mapping.vim
+source $HOME/.config/vim/keys/add-mapping.vim
+source $HOME/.config/vim/vim-plug/plugins.vim
+
+" set the colorscheme
+set background=dark
+colorscheme ghdark
+hi Normal ctermbg=NONE guibg=NONE
+hi CursorLine ctermbg=NONE guibg=NONE
+hi CursorLineNr ctermbg=NONE guibg=NONE
+
+
+" " ============ "
+" " CoC settings "
+" " ============ "
+" 
+" " Always show the signcolumn, otherwise it would shift the text each time
+" " diagnostics appear/become resolved.
+" if has("nvim-0.5.0") || has("patch-8.1.1564")
+"   " Recently vim can merge signcolumn and number column into one
+"   set signcolumn=number
+" else
+"   set signcolumn=yes
+" endif
+" 
+" " Make <CR> auto-select the first completion item and notify coc.nvim to
+" " format on enter, <cr> could be remapped by other vim plugin
+" inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+"                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+" 
+" hi CocWarningHighlight guibg=NONE ctermbg=NONE gui=underline cterm=underline
+" hi CocInfoHighlight guibg=NONE ctermbg=NONE gui=underline cterm=underline
+" hi CocUnusedHighlight guibg=NONE ctermbg=NONE gui=underline cterm=underline
